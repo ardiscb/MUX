@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Courtney Ardis. All rights reserved.
 //
 
+#import "SurveyViewController.h"
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
@@ -25,7 +26,9 @@
 
 - (void)viewDidLoad
 {
-    
+    //add black border around completed tasks label
+    completeLabel.layer.borderColor = [UIColor blackColor].CGColor;
+    completeLabel.layer.borderWidth = 0.75;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -37,6 +40,15 @@
     if(button.tag == 0)
     {
         [self dismissViewControllerAnimated:true completion:nil];
+    }
+    //if survey button is clicked
+    else if (button.tag == 1)
+    {
+        SurveyViewController *surveyView = [[SurveyViewController alloc] initWithNibName:@"SurveyViewController" bundle:nil];
+        if(surveyView != nil)
+        {
+            [self presentViewController:surveyView animated:true completion:nil];
+        }
     }
 }
 

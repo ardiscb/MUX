@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface DetailViewController : UIViewController
 {
-    
+    IBOutlet UILabel *completeLabel;
 }
 @end

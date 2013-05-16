@@ -31,6 +31,8 @@
 		FAC725E31741BC2C00B67966 /* deadpool.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAC725E21741BC2C00B67966 /* deadpool.jpg */; };
 		FAC725E71741E75400B67966 /* LongBox_icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC725E51741E75400B67966 /* LongBox_icon_retina.png */; };
 		FAC725E81741E75400B67966 /* LongBox_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC725E61741E75400B67966 /* LongBox_icon.png */; };
+		FAC725F0174497A700B67966 /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC725EE174497A700B67966 /* SurveyViewController.m */; };
+		FAC725F1174497A700B67966 /* SurveyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC725EF174497A700B67966 /* SurveyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,9 @@
 		FAC725E21741BC2C00B67966 /* deadpool.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deadpool.jpg; sourceTree = "<group>"; };
 		FAC725E51741E75400B67966 /* LongBox_icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LongBox_icon_retina.png; sourceTree = "<group>"; };
 		FAC725E61741E75400B67966 /* LongBox_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LongBox_icon.png; sourceTree = "<group>"; };
+		FAC725ED174497A600B67966 /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
+		FAC725EE174497A700B67966 /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
+		FAC725EF174497A700B67966 /* SurveyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,9 @@
 				FAC725DD1741A09300B67966 /* DetailViewController.h */,
 				FAC725DE1741A09300B67966 /* DetailViewController.m */,
 				FAC725DF1741A09300B67966 /* DetailViewController.xib */,
+				FAC725ED174497A600B67966 /* SurveyViewController.h */,
+				FAC725EE174497A700B67966 /* SurveyViewController.m */,
+				FAC725EF174497A700B67966 /* SurveyViewController.xib */,
 				FAC725BB1741990C00B67966 /* first.png */,
 				FAC725BD1741990C00B67966 /* first@2x.png */,
 				FAC725C21741990C00B67966 /* second.png */,
@@ -218,6 +226,7 @@
 				FAC725E31741BC2C00B67966 /* deadpool.jpg in Resources */,
 				FAC725E71741E75400B67966 /* LongBox_icon_retina.png in Resources */,
 				FAC725E81741E75400B67966 /* LongBox_icon.png in Resources */,
+				FAC725F1174497A700B67966 /* SurveyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +243,7 @@
 				FAC725C11741990C00B67966 /* SecondViewController.m in Sources */,
 				FAC725DB17419FDB00B67966 /* IssueViewController.m in Sources */,
 				FAC725E01741A09400B67966 /* DetailViewController.m in Sources */,
+				FAC725F0174497A700B67966 /* SurveyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
