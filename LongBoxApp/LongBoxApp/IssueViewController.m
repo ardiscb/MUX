@@ -46,6 +46,11 @@
         if(issueTitles != nil)
         {
             cell.textLabel.text = [issueTitles objectAtIndex:indexPath.row];
+            if(indexPath.row > 0)
+            {
+                cell.selectionStyle = UITableViewCellSelectionStyleGray;
+                //cell.userInteractionEnabled = NO;
+            }
         }
     }
     return cell;
@@ -56,7 +61,19 @@
     DetailViewController *comicDetailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     if(comicDetailView != nil)
     {
-        [self presentViewController:comicDetailView animated:true completion:nil];
+        if(indexPath.row == 0)
+        {
+            [self presentViewController:comicDetailView animated:true completion:nil];
+        }
+        //alert user that this feature has not been added yet
+        if(indexPath.row > 0)
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Feature Not Added" message:@"Please select another issue number, this feature has not been added yet" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            if(alert != nil)
+            {
+                [alert show];
+            }
+        }
     }
 }
 

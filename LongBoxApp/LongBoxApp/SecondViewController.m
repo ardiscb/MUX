@@ -21,14 +21,14 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Collection", @"Collection");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        self.tabBarItem.image = [UIImage imageNamed:@"text-list"];
     }
     return self;
 }
 							
 - (void)viewDidLoad
 {
-    seriesTitles = [[NSArray alloc] initWithObjects:@"Deadpool", @"Superman", @"Thor" @"Amazing Spider-man", @"Blackest Night", @"Green Lantern", @"Gambit", nil];
+    seriesTitles = [[NSArray alloc] initWithObjects:@"Deadpool", @"Superman", @"Thor", @"Amazing Spider-man", @"Blackest Night", @"Green Lantern", @"Gambit", nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -48,6 +48,11 @@
         if(seriesTitles != nil)
         {
             cell.textLabel.text = [seriesTitles objectAtIndex:indexPath.row];
+            if(indexPath.row > 0)
+            {
+                cell.selectionStyle = UITableViewCellSelectionStyleGray;
+                //cell.userInteractionEnabled = NO;
+            }
         }
     }
     return cell;
@@ -58,8 +63,22 @@
     IssueViewController *comicIssueView = [[IssueViewController alloc] initWithNibName:@"IssueViewController" bundle:nil];
     if(comicIssueView != nil)
     {
-        [self presentViewController:comicIssueView animated:true completion:nil];
+        if(indexPath.row == 0)
+        {
+            [self presentViewController:comicIssueView animated:true completion:nil];
+        }
+        //alert user that this feature has not been added yet
+        if(indexPath.row > 0)
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Feature Not Added" message:@"Please select another title, this feature has not been added yet" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            if(alert != nil)
+            {
+                [alert show];
+            }
+        }
     }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
