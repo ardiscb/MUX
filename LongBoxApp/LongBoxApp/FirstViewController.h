@@ -11,5 +11,10 @@
 @interface FirstViewController : UIViewController
 {
     IBOutlet UIButton *addComic;
+    
+    IBOutlet UITextField *seriesTitle;
+    IBOutlet UITextField *comicTitle;
+    IBOutlet UITextField *issueNum;
+    IBOutlet UITextField *publisher;
 }
 @end

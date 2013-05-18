@@ -26,6 +26,9 @@
 							
 - (void)viewDidLoad
 {
+    //Close keyboard when clicked off usernameInput UITextField
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard)];
+    [self.view addGestureRecognizer:tap];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -39,6 +42,13 @@
     }
 }
 
+- (void)closeKeyboard
+{
+    [seriesTitle resignFirstResponder];
+    [comicTitle resignFirstResponder];
+    [issueNum resignFirstResponder];
+    [publisher resignFirstResponder];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
