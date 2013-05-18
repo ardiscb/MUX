@@ -9,6 +9,7 @@
 #import "IssueViewController.h"
 #import "DetailViewController.h"
 #import "SecondViewController.h"
+#import "CustomCellViewController.h"
 
 @interface SecondViewController ()
 
@@ -28,6 +29,14 @@
 							
 - (void)viewDidLoad
 {
+    titleImages = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"deadpool.png"],
+                                                   [UIImage imageNamed:@"superman.png"],
+                                                   [UIImage imageNamed:@"thor.png"],
+                                                   [UIImage imageNamed:@"spiderman.png"],
+                                                   [UIImage imageNamed:@"blackestNight.png"],
+                                                   [UIImage imageNamed:@"greenLantern.png"],
+                                                   [UIImage imageNamed:@"gambit.png"], nil];
+    
     seriesTitles = [[NSArray alloc] initWithObjects:@"Deadpool", @"Superman", @"Thor", @"Amazing Spider-man", @"Blackest Night", @"Green Lantern", @"Gambit", nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -42,17 +51,31 @@
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    if (cell != nil)
+    CustomCellViewController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    if (cell == nil)
     {
+        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
+        for(UIView *view in views)
+        {
+            if([view isKindOfClass:[CustomCellViewController class]])
+            {
+                cell = (CustomCellViewController*)view;
+            }
+        }
         if(seriesTitles != nil)
         {
-            cell.textLabel.text = [seriesTitles objectAtIndex:indexPath.row];
-            if(indexPath.row > 0)
-            {
-                cell.selectionStyle = UITableViewCellSelectionStyleGray;
+            
+            UIImage *cellImage = [titleImages objectAtIndex:indexPath.row];
+            cell.titleImage.image = cellImage;
+            //cell.titleImage.image.size = CGSizeMake(50.0f, 50.0f);
+            cell.titleImage.frame = CGRectMake(50.0f, 50.0f, 150.0f, 150.0f);
+            cell.titleLabel.text = [seriesTitles objectAtIndex:indexPath.row];
+            //if(indexPath.row > 0)
+            //{
+            //    cell.selectionStyle = UITableViewCellSelectionStyleGray;
                 //cell.userInteractionEnabled = NO;
-            }
+            //}
         }
     }
     return cell;

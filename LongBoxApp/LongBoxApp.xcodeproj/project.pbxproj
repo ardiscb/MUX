@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA57D2CF174702C70077A0C2 /* deadpool.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2CE174702C70077A0C2 /* deadpool.png */; };
+		FA57D2D6174706380077A0C2 /* blackestNight.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D0174706380077A0C2 /* blackestNight.png */; };
+		FA57D2D7174706380077A0C2 /* gambit.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D1174706380077A0C2 /* gambit.png */; };
+		FA57D2D8174706380077A0C2 /* greenLantern.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D2174706380077A0C2 /* greenLantern.png */; };
+		FA57D2D9174706380077A0C2 /* spiderman.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D3174706380077A0C2 /* spiderman.png */; };
+		FA57D2DA174706380077A0C2 /* superman.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D4174706380077A0C2 /* superman.png */; };
+		FA57D2DB174706380077A0C2 /* thor.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D5174706380077A0C2 /* thor.png */; };
+		FA57D2DD17470A410077A0C2 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2DC17470A410077A0C2 /* CustomCellView.xib */; };
+		FA57D2E017470B770077A0C2 /* CustomCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA57D2DF17470B770077A0C2 /* CustomCellViewController.m */; };
 		FAC725A11741990C00B67966 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC725A01741990C00B67966 /* UIKit.framework */; };
 		FAC725A31741990C00B67966 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC725A21741990C00B67966 /* Foundation.framework */; };
 		FAC725A51741990C00B67966 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC725A41741990C00B67966 /* CoreGraphics.framework */; };
@@ -38,7 +47,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FAC7259D1741990C00B67966 /* Long Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Long Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA57D2CE174702C70077A0C2 /* deadpool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deadpool.png; sourceTree = "<group>"; };
+		FA57D2D0174706380077A0C2 /* blackestNight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackestNight.png; sourceTree = "<group>"; };
+		FA57D2D1174706380077A0C2 /* gambit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gambit.png; sourceTree = "<group>"; };
+		FA57D2D2174706380077A0C2 /* greenLantern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenLantern.png; sourceTree = "<group>"; };
+		FA57D2D3174706380077A0C2 /* spiderman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spiderman.png; sourceTree = "<group>"; };
+		FA57D2D4174706380077A0C2 /* superman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superman.png; sourceTree = "<group>"; };
+		FA57D2D5174706380077A0C2 /* thor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thor.png; sourceTree = "<group>"; };
+		FA57D2DC17470A410077A0C2 /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
+		FA57D2DE17470B770077A0C2 /* CustomCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellViewController.h; sourceTree = "<group>"; };
+		FA57D2DF17470B770077A0C2 /* CustomCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellViewController.m; sourceTree = "<group>"; };
+		FAC7259D1741990C00B67966 /* LongBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC725A01741990C00B67966 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAC725A21741990C00B67966 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAC725A41741990C00B67966 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,7 +122,7 @@
 		FAC7259E1741990C00B67966 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAC7259D1741990C00B67966 /* Long Box.app */,
+				FAC7259D1741990C00B67966 /* LongBox.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +166,17 @@
 				FAC725E51741E75400B67966 /* LongBox_icon_retina.png */,
 				FAC725E61741E75400B67966 /* LongBox_icon.png */,
 				FAC725E21741BC2C00B67966 /* deadpool.jpg */,
+				FA57D2CE174702C70077A0C2 /* deadpool.png */,
+				FA57D2D0174706380077A0C2 /* blackestNight.png */,
+				FA57D2D1174706380077A0C2 /* gambit.png */,
+				FA57D2D2174706380077A0C2 /* greenLantern.png */,
+				FA57D2D3174706380077A0C2 /* spiderman.png */,
+				FA57D2D4174706380077A0C2 /* superman.png */,
+				FA57D2D5174706380077A0C2 /* thor.png */,
 				FAC725A71741990C00B67966 /* Supporting Files */,
+				FA57D2DE17470B770077A0C2 /* CustomCellViewController.h */,
+				FA57D2DF17470B770077A0C2 /* CustomCellViewController.m */,
+				FA57D2DC17470A410077A0C2 /* CustomCellView.xib */,
 			);
 			path = LongBoxApp;
 			sourceTree = "<group>";
@@ -183,7 +212,7 @@
 			);
 			name = LongBoxApp;
 			productName = LongBoxApp;
-			productReference = FAC7259D1741990C00B67966 /* Long Box.app */;
+			productReference = FAC7259D1741990C00B67966 /* LongBox.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -235,6 +264,14 @@
 				FAC725F1174497A700B67966 /* SurveyViewController.xib in Resources */,
 				FAC725F41746D2F500B67966 /* plus-sign.png in Resources */,
 				FAC725F51746D2F500B67966 /* text-list.png in Resources */,
+				FA57D2CF174702C70077A0C2 /* deadpool.png in Resources */,
+				FA57D2D6174706380077A0C2 /* blackestNight.png in Resources */,
+				FA57D2D7174706380077A0C2 /* gambit.png in Resources */,
+				FA57D2D8174706380077A0C2 /* greenLantern.png in Resources */,
+				FA57D2D9174706380077A0C2 /* spiderman.png in Resources */,
+				FA57D2DA174706380077A0C2 /* superman.png in Resources */,
+				FA57D2DB174706380077A0C2 /* thor.png in Resources */,
+				FA57D2DD17470A410077A0C2 /* CustomCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +289,7 @@
 				FAC725DB17419FDB00B67966 /* IssueViewController.m in Sources */,
 				FAC725E01741A09400B67966 /* DetailViewController.m in Sources */,
 				FAC725F0174497A700B67966 /* SurveyViewController.m in Sources */,
+				FA57D2E017470B770077A0C2 /* CustomCellViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +385,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LongBoxApp/LongBoxApp-Prefix.pch";
 				INFOPLIST_FILE = "LongBoxApp/LongBoxApp-Info.plist";
-				PRODUCT_NAME = "Long Box";
+				PRODUCT_NAME = LongBox;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -358,7 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LongBoxApp/LongBoxApp-Prefix.pch";
 				INFOPLIST_FILE = "LongBoxApp/LongBoxApp-Info.plist";
-				PRODUCT_NAME = "Long Box";
+				PRODUCT_NAME = LongBox;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

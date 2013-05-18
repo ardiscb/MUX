@@ -11,5 +11,9 @@
 @interface SecondViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     NSArray *seriesTitles;
+    NSArray *titleImages;
+    
+    IBOutlet UITableView *titleTable;
 }
+
 @end
