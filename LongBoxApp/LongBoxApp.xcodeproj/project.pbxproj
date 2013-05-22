@@ -148,6 +148,9 @@
 				FAC725BF1741990C00B67966 /* SecondViewController.h */,
 				FAC725C01741990C00B67966 /* SecondViewController.m */,
 				FAC725C91741990C00B67966 /* SecondViewController.xib */,
+				FA57D2DE17470B770077A0C2 /* CustomCellViewController.h */,
+				FA57D2DF17470B770077A0C2 /* CustomCellViewController.m */,
+				FA57D2DC17470A410077A0C2 /* CustomCellView.xib */,
 				FAC725D817419FDB00B67966 /* IssueViewController.h */,
 				FAC725D917419FDB00B67966 /* IssueViewController.m */,
 				FAC725DA17419FDB00B67966 /* IssueViewController.xib */,
@@ -174,9 +177,6 @@
 				FA57D2D4174706380077A0C2 /* superman.png */,
 				FA57D2D5174706380077A0C2 /* thor.png */,
 				FAC725A71741990C00B67966 /* Supporting Files */,
-				FA57D2DE17470B770077A0C2 /* CustomCellViewController.h */,
-				FA57D2DF17470B770077A0C2 /* CustomCellViewController.m */,
-				FA57D2DC17470A410077A0C2 /* CustomCellView.xib */,
 			);
 			path = LongBoxApp;
 			sourceTree = "<group>";

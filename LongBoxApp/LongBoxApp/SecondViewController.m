@@ -68,14 +68,12 @@
             
             UIImage *cellImage = [titleImages objectAtIndex:indexPath.row];
             cell.titleImage.image = cellImage;
-            //cell.titleImage.image.size = CGSizeMake(50.0f, 50.0f);
-            cell.titleImage.frame = CGRectMake(50.0f, 50.0f, 150.0f, 150.0f);
             cell.titleLabel.text = [seriesTitles objectAtIndex:indexPath.row];
-            //if(indexPath.row > 0)
-            //{
-            //    cell.selectionStyle = UITableViewCellSelectionStyleGray;
+            if(indexPath.row > 0)
+            {
+                cell.selectionStyle = UITableViewCellSelectionStyleGray;
                 //cell.userInteractionEnabled = NO;
-            //}
+            }
         }
     }
     return cell;

@@ -26,7 +26,13 @@
 							
 - (void)viewDidLoad
 {
-    //Close keyboard when clicked off usernameInput UITextField
+    seriesTitle.delegate = self;
+    comicTitle.delegate = self;
+    issueNum.delegate = self;
+    publisher.delegate = self;
+    
+    //addComic.tintColor = [UIColor grayColor];
+    //Close keyboard when clicked off UITextField
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard)];
     [self.view addGestureRecognizer:tap];
     [super viewDidLoad];
@@ -41,7 +47,22 @@
         [alert show];
     }
 }
+//- (void)textFieldDidBeginEditing:(UITextField *)textField
+//{
+//    /* keyboard is visible, move views */
+//}
+//
+//- (void)textFieldDidEndEditing:(UITextField *)textField
+//{
+//    /* resign first responder, hide keyboard, move views */
+//    
+//}
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return NO;
+}
 - (void)closeKeyboard
 {
     [seriesTitle resignFirstResponder];
