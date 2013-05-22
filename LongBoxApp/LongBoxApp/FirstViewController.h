@@ -10,7 +10,11 @@
 
 @interface FirstViewController : UIViewController <UITextFieldDelegate>
 {
+    IBOutlet UIView *firstView;
+    
     IBOutlet UIButton *addComic;
+    
+    IBOutlet UIScrollView *scrollView;
     
     IBOutlet UITextField *seriesTitle;
     IBOutlet UITextField *comicTitle;

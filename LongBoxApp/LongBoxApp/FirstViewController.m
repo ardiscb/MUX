@@ -26,6 +26,8 @@
 							
 - (void)viewDidLoad
 {
+    //set delegate for text fields
+    //for dismissing keyboard when return is clicked
     seriesTitle.delegate = self;
     comicTitle.delegate = self;
     issueNum.delegate = self;
@@ -35,36 +37,48 @@
     //Close keyboard when clicked off UITextField
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard)];
     [self.view addGestureRecognizer:tap];
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 -(IBAction)onClick:(id)sender
 {
+    //alert users that the add comic feature will be added
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"The add comic feature will be added. This is your success message!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     if(alert != nil)
     {
         [alert show];
     }
 }
-//- (void)textFieldDidBeginEditing:(UITextField *)textField
-//{
-//    /* keyboard is visible, move views */
-//}
-//
-//- (void)textFieldDidEndEditing:(UITextField *)textField
-//{
-//    /* resign first responder, hide keyboard, move views */
-//    
-//}
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    /* keyboard is visible, move views */
+    if([textField isEqual:publisher])
+    {
+        [scrollView setContentOffset:CGPointMake(100, 150)];
+        firstView.frame = CGRectMake(0, 0, 320, 250);
+    }
+    if([textField isEqual:issueNum])
+    {
+        [scrollView setContentOffset:CGPointMake(100, 150)];
+        firstView.frame = CGRectMake(0, 0, 320, 250);
+    }
+    
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    scrollView.frame = CGRectMake(0, 0, 320, 460);
+    firstView.frame = CGRectMake(0, 0, 320, 460);
+
     [textField resignFirstResponder];
     return NO;
 }
 - (void)closeKeyboard
 {
+    //dismiss keyboard
     [seriesTitle resignFirstResponder];
     [comicTitle resignFirstResponder];
     [issueNum resignFirstResponder];
