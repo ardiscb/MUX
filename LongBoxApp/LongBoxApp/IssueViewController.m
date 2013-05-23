@@ -27,6 +27,8 @@
 - (void)viewDidLoad
 {
     issueTitles = [[NSArray alloc] initWithObjects:@"1", @"5", @"7", @"10", @"15", nil];
+    
+    issueTable.backgroundColor = [UIColor grayColor];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -46,6 +48,7 @@
         if(issueTitles != nil)
         {
             cell.textLabel.text = [issueTitles objectAtIndex:indexPath.row];
+            cell.textLabel.textColor = [UIColor whiteColor];
             if(indexPath.row > 0)
             {
                 cell.selectionStyle = UITableViewCellSelectionStyleGray;

@@ -29,6 +29,10 @@
     //add black border around completed tasks label
     completeLabel.layer.borderColor = [UIColor blackColor].CGColor;
     completeLabel.layer.borderWidth = 0.75;
+    
+    surveyBtn.layer.cornerRadius = 10;
+    surveyBtn.clipsToBounds = YES;
+    surveyBtn.layer.borderWidth = 1.5f;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

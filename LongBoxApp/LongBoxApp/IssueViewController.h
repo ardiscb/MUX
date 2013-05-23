@@ -11,5 +11,6 @@
 @interface IssueViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     NSArray *issueTitles;
+    IBOutlet UITableView *issueTable;
 }
 @end

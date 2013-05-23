@@ -38,6 +38,10 @@
                                                    [UIImage imageNamed:@"gambit.png"], nil];
     
     seriesTitles = [[NSArray alloc] initWithObjects:@"Deadpool", @"Superman", @"Thor", @"Amazing Spider-man", @"Blackest Night", @"Green Lantern", @"Gambit", nil];
+    
+    //change background color of table view
+    titleTable.backgroundColor = [UIColor grayColor];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

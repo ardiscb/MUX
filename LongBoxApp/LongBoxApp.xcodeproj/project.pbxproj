@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1D96FC174D9C3E001F90B5 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1D96FB174D9C3E001F90B5 /* plus.png */; };
+		FA1D96FE174DA4EC001F90B5 /* deadpool1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA1D96FD174DA4EC001F90B5 /* deadpool1.jpg */; };
 		FA57D2CF174702C70077A0C2 /* deadpool.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2CE174702C70077A0C2 /* deadpool.png */; };
 		FA57D2D6174706380077A0C2 /* blackestNight.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D0174706380077A0C2 /* blackestNight.png */; };
 		FA57D2D7174706380077A0C2 /* gambit.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D1174706380077A0C2 /* gambit.png */; };
@@ -37,16 +39,16 @@
 		FAC725DC17419FDB00B67966 /* IssueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC725DA17419FDB00B67966 /* IssueViewController.xib */; };
 		FAC725E01741A09400B67966 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC725DE1741A09300B67966 /* DetailViewController.m */; };
 		FAC725E11741A09400B67966 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC725DF1741A09300B67966 /* DetailViewController.xib */; };
-		FAC725E31741BC2C00B67966 /* deadpool.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAC725E21741BC2C00B67966 /* deadpool.jpg */; };
 		FAC725E71741E75400B67966 /* LongBox_icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC725E51741E75400B67966 /* LongBox_icon_retina.png */; };
 		FAC725E81741E75400B67966 /* LongBox_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC725E61741E75400B67966 /* LongBox_icon.png */; };
 		FAC725F0174497A700B67966 /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC725EE174497A700B67966 /* SurveyViewController.m */; };
 		FAC725F1174497A700B67966 /* SurveyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC725EF174497A700B67966 /* SurveyViewController.xib */; };
-		FAC725F41746D2F500B67966 /* plus-sign.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC725F21746D2F500B67966 /* plus-sign.png */; };
 		FAC725F51746D2F500B67966 /* text-list.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC725F31746D2F500B67966 /* text-list.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1D96FB174D9C3E001F90B5 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		FA1D96FD174DA4EC001F90B5 /* deadpool1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deadpool1.jpg; sourceTree = "<group>"; };
 		FA57D2CE174702C70077A0C2 /* deadpool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deadpool.png; sourceTree = "<group>"; };
 		FA57D2D0174706380077A0C2 /* blackestNight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackestNight.png; sourceTree = "<group>"; };
 		FA57D2D1174706380077A0C2 /* gambit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gambit.png; sourceTree = "<group>"; };
@@ -86,13 +88,11 @@
 		FAC725DD1741A09300B67966 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		FAC725DE1741A09300B67966 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		FAC725DF1741A09300B67966 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		FAC725E21741BC2C00B67966 /* deadpool.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deadpool.jpg; sourceTree = "<group>"; };
 		FAC725E51741E75400B67966 /* LongBox_icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LongBox_icon_retina.png; sourceTree = "<group>"; };
 		FAC725E61741E75400B67966 /* LongBox_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LongBox_icon.png; sourceTree = "<group>"; };
 		FAC725ED174497A600B67966 /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
 		FAC725EE174497A700B67966 /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
 		FAC725EF174497A700B67966 /* SurveyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyViewController.xib; sourceTree = "<group>"; };
-		FAC725F21746D2F500B67966 /* plus-sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-sign.png"; sourceTree = "<group>"; };
 		FAC725F31746D2F500B67966 /* text-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-list.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +140,8 @@
 		FAC725A61741990C00B67966 /* LongBoxApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA1D96FD174DA4EC001F90B5 /* deadpool1.jpg */,
+				FA1D96FB174D9C3E001F90B5 /* plus.png */,
 				FAC725AF1741990C00B67966 /* AppDelegate.h */,
 				FAC725B01741990C00B67966 /* AppDelegate.m */,
 				FAC725B81741990C00B67966 /* FirstViewController.h */,
@@ -160,7 +162,6 @@
 				FAC725ED174497A600B67966 /* SurveyViewController.h */,
 				FAC725EE174497A700B67966 /* SurveyViewController.m */,
 				FAC725EF174497A700B67966 /* SurveyViewController.xib */,
-				FAC725F21746D2F500B67966 /* plus-sign.png */,
 				FAC725F31746D2F500B67966 /* text-list.png */,
 				FAC725BB1741990C00B67966 /* first.png */,
 				FAC725BD1741990C00B67966 /* first@2x.png */,
@@ -168,7 +169,6 @@
 				FAC725C41741990C00B67966 /* second@2x.png */,
 				FAC725E51741E75400B67966 /* LongBox_icon_retina.png */,
 				FAC725E61741E75400B67966 /* LongBox_icon.png */,
-				FAC725E21741BC2C00B67966 /* deadpool.jpg */,
 				FA57D2CE174702C70077A0C2 /* deadpool.png */,
 				FA57D2D0174706380077A0C2 /* blackestNight.png */,
 				FA57D2D1174706380077A0C2 /* gambit.png */,
@@ -258,11 +258,9 @@
 				FAC725CB1741990C00B67966 /* SecondViewController.xib in Resources */,
 				FAC725DC17419FDB00B67966 /* IssueViewController.xib in Resources */,
 				FAC725E11741A09400B67966 /* DetailViewController.xib in Resources */,
-				FAC725E31741BC2C00B67966 /* deadpool.jpg in Resources */,
 				FAC725E71741E75400B67966 /* LongBox_icon_retina.png in Resources */,
 				FAC725E81741E75400B67966 /* LongBox_icon.png in Resources */,
 				FAC725F1174497A700B67966 /* SurveyViewController.xib in Resources */,
-				FAC725F41746D2F500B67966 /* plus-sign.png in Resources */,
 				FAC725F51746D2F500B67966 /* text-list.png in Resources */,
 				FA57D2CF174702C70077A0C2 /* deadpool.png in Resources */,
 				FA57D2D6174706380077A0C2 /* blackestNight.png in Resources */,
@@ -272,6 +270,8 @@
 				FA57D2DA174706380077A0C2 /* superman.png in Resources */,
 				FA57D2DB174706380077A0C2 /* thor.png in Resources */,
 				FA57D2DD17470A410077A0C2 /* CustomCellView.xib in Resources */,
+				FA1D96FC174D9C3E001F90B5 /* plus.png in Resources */,
+				FA1D96FE174DA4EC001F90B5 /* deadpool1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

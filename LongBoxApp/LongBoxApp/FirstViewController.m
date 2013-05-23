@@ -19,7 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Add Comic", @"Add Comic");
-        self.tabBarItem.image = [UIImage imageNamed:@"plus-sign"];
+        self.tabBarItem.image = [UIImage imageNamed:@"plus"];
     }
     return self;
 }
@@ -33,11 +33,15 @@
     issueNum.delegate = self;
     publisher.delegate = self;
     
-    //addComic.tintColor = [UIColor grayColor];
+    //make button rounded
+    addComic.layer.cornerRadius = 10;
+    addComic.clipsToBounds = YES;
+    addComic.layer.borderWidth = 1.5f;
+    addComic.layer.borderColor = [UIColor blackColor].CGColor;
+    
     //Close keyboard when clicked off UITextField
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard)];
     [self.view addGestureRecognizer:tap];
-    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -45,6 +49,12 @@
 
 -(IBAction)onClick:(id)sender
 {
+    //if add button is clicked
+    if(addComic.touchInside == true)
+    {
+        //change background color
+        addComic.backgroundColor = [UIColor redColor];
+    }
     //alert users that the add comic feature will be added
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"The add comic feature will be added. This is your success message!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     if(alert != nil)
@@ -70,6 +80,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    //push scroll and view up for keyboard
     scrollView.frame = CGRectMake(0, 0, 320, 460);
     firstView.frame = CGRectMake(0, 0, 320, 460);
 
@@ -78,6 +89,9 @@
 }
 - (void)closeKeyboard
 {
+    //set scroll and view back
+    scrollView.frame = CGRectMake(0, 0, 320, 460);
+    firstView.frame = CGRectMake(0, 0, 320, 460);
     //dismiss keyboard
     [seriesTitle resignFirstResponder];
     [comicTitle resignFirstResponder];
