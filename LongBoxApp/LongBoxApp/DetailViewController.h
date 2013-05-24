@@ -12,7 +12,7 @@
 @interface DetailViewController : UIViewController
 {
     IBOutlet UILabel *completeLabel;
-    
+    IBOutlet UIView *detailView;
     IBOutlet UIButton *surveyBtn;
 }
 @end

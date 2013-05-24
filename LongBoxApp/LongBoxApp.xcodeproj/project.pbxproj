@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FA1D96FC174D9C3E001F90B5 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1D96FB174D9C3E001F90B5 /* plus.png */; };
 		FA1D96FE174DA4EC001F90B5 /* deadpool1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA1D96FD174DA4EC001F90B5 /* deadpool1.jpg */; };
+		FA1D9700174ED379001F90B5 /* LongBox_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1D96FF174ED379001F90B5 /* LongBox_logo.png */; };
+		FA1D9704174EDD94001F90B5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D9702174EDD94001F90B5 /* MainViewController.m */; };
+		FA1D9705174EDD94001F90B5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1D9703174EDD94001F90B5 /* MainViewController.xib */; };
 		FA57D2CF174702C70077A0C2 /* deadpool.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2CE174702C70077A0C2 /* deadpool.png */; };
 		FA57D2D6174706380077A0C2 /* blackestNight.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D0174706380077A0C2 /* blackestNight.png */; };
 		FA57D2D7174706380077A0C2 /* gambit.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57D2D1174706380077A0C2 /* gambit.png */; };
@@ -49,6 +52,10 @@
 /* Begin PBXFileReference section */
 		FA1D96FB174D9C3E001F90B5 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		FA1D96FD174DA4EC001F90B5 /* deadpool1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deadpool1.jpg; sourceTree = "<group>"; };
+		FA1D96FF174ED379001F90B5 /* LongBox_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LongBox_logo.png; sourceTree = "<group>"; };
+		FA1D9701174EDD94001F90B5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FA1D9702174EDD94001F90B5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FA1D9703174EDD94001F90B5 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		FA57D2CE174702C70077A0C2 /* deadpool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deadpool.png; sourceTree = "<group>"; };
 		FA57D2D0174706380077A0C2 /* blackestNight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackestNight.png; sourceTree = "<group>"; };
 		FA57D2D1174706380077A0C2 /* gambit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gambit.png; sourceTree = "<group>"; };
@@ -140,10 +147,11 @@
 		FAC725A61741990C00B67966 /* LongBoxApp */ = {
 			isa = PBXGroup;
 			children = (
-				FA1D96FD174DA4EC001F90B5 /* deadpool1.jpg */,
-				FA1D96FB174D9C3E001F90B5 /* plus.png */,
 				FAC725AF1741990C00B67966 /* AppDelegate.h */,
 				FAC725B01741990C00B67966 /* AppDelegate.m */,
+				FA1D9701174EDD94001F90B5 /* MainViewController.h */,
+				FA1D9702174EDD94001F90B5 /* MainViewController.m */,
+				FA1D9703174EDD94001F90B5 /* MainViewController.xib */,
 				FAC725B81741990C00B67966 /* FirstViewController.h */,
 				FAC725B91741990C00B67966 /* FirstViewController.m */,
 				FAC725C61741990C00B67966 /* FirstViewController.xib */,
@@ -162,6 +170,9 @@
 				FAC725ED174497A600B67966 /* SurveyViewController.h */,
 				FAC725EE174497A700B67966 /* SurveyViewController.m */,
 				FAC725EF174497A700B67966 /* SurveyViewController.xib */,
+				FA1D96FF174ED379001F90B5 /* LongBox_logo.png */,
+				FA1D96FD174DA4EC001F90B5 /* deadpool1.jpg */,
+				FA1D96FB174D9C3E001F90B5 /* plus.png */,
 				FAC725F31746D2F500B67966 /* text-list.png */,
 				FAC725BB1741990C00B67966 /* first.png */,
 				FAC725BD1741990C00B67966 /* first@2x.png */,
@@ -272,6 +283,8 @@
 				FA57D2DD17470A410077A0C2 /* CustomCellView.xib in Resources */,
 				FA1D96FC174D9C3E001F90B5 /* plus.png in Resources */,
 				FA1D96FE174DA4EC001F90B5 /* deadpool1.jpg in Resources */,
+				FA1D9700174ED379001F90B5 /* LongBox_logo.png in Resources */,
+				FA1D9705174EDD94001F90B5 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +303,7 @@
 				FAC725E01741A09400B67966 /* DetailViewController.m in Sources */,
 				FAC725F0174497A700B67966 /* SurveyViewController.m in Sources */,
 				FA57D2E017470B770077A0C2 /* CustomCellViewController.m in Sources */,
+				FA1D9704174EDD94001F90B5 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,4 +22,5 @@
     IBOutlet UITextField *issueNum;
     IBOutlet UITextField *publisher;
 }
+
 @end

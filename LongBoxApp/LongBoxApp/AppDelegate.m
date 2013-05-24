@@ -12,6 +12,7 @@
 #import "SecondViewController.h"
 #import "IssueViewController.h"
 #import "DetailViewController.h"
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -19,7 +20,6 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    
     
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];

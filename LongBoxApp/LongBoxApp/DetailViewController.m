@@ -30,6 +30,8 @@
     completeLabel.layer.borderColor = [UIColor blackColor].CGColor;
     completeLabel.layer.borderWidth = 0.75;
     
+    detailView.backgroundColor = [UIColor grayColor];
+    
     surveyBtn.layer.cornerRadius = 10;
     surveyBtn.clipsToBounds = YES;
     surveyBtn.layer.borderWidth = 1.5f;
@@ -39,6 +41,11 @@
 
 -(IBAction)onClick:(id)sender
 {
+    if(surveyBtn.touchInside == true)
+    {
+        //change background color
+        surveyBtn.backgroundColor = [UIColor redColor];
+    }
     UIButton *button = (UIButton*)sender;
     //if back button is clicked
     if(button.tag == 0)

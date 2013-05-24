@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "MainViewController.h"
 
 @interface FirstViewController ()
 
@@ -23,7 +24,17 @@
     }
     return self;
 }
-							
+
+
+-(void)viewDidAppear:(BOOL)animated
+{
+//    MainViewController *mainView = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+//    if(mainView != nil)
+//    {
+//        [self presentViewController:mainView animated:false completion:nil];
+//    }
+//    [super viewDidAppear:animated];
+}
 - (void)viewDidLoad
 {
     //set delegate for text fields
