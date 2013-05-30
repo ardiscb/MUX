@@ -12,7 +12,6 @@
 #import "SecondViewController.h"
 #import "IssueViewController.h"
 #import "DetailViewController.h"
-#import "MainViewController.h"
 
 @implementation AppDelegate
 
