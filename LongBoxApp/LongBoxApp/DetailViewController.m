@@ -23,7 +23,17 @@
     }
     return self;
 }
-
+- (void)viewDidAppear:(BOOL)animated
+{
+    //allocate right swiper
+    surveySwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    //set direction
+    surveySwiper.direction = UISwipeGestureRecognizerDirectionRight;
+    //add swipe right gesture to label
+    [swipeLabel addGestureRecognizer:surveySwiper];
+    
+    [super viewDidAppear:animated];
+}
 - (void)viewDidLoad
 {
     //add black border around completed tasks label
@@ -39,13 +49,26 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+-(IBAction)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    //if user swipes right
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    {
+        SurveyViewController *surveyView = [[SurveyViewController alloc] initWithNibName:@"SurveyViewController" bundle:nil];
+        if(surveyView != nil)
+        {
+            [self presentViewController:surveyView animated:true completion:nil];
+        }
+        [surveyView reloadInputViews];
+    }
+}
 -(IBAction)onClick:(id)sender
 {
-    if(surveyBtn.touchInside == true)
-    {
-        //change background color
-        surveyBtn.backgroundColor = [UIColor redColor];
-    }
+//    if(surveyBtn.touchInside == true)
+//    {
+//        //change background color
+//        surveyBtn.backgroundColor = [UIColor redColor];
+//    }
     UIButton *button = (UIButton*)sender;
     //if back button is clicked
     if(button.tag == 0)
@@ -53,14 +76,14 @@
         [self dismissViewControllerAnimated:true completion:nil];
     }
     //if survey button is clicked
-    else if (button.tag == 1)
-    {
-        SurveyViewController *surveyView = [[SurveyViewController alloc] initWithNibName:@"SurveyViewController" bundle:nil];
-        if(surveyView != nil)
-        {
-            [self presentViewController:surveyView animated:true completion:nil];
-        }
-    }
+//    else if (button.tag == 1)
+//    {
+//        SurveyViewController *surveyView = [[SurveyViewController alloc] initWithNibName:@"SurveyViewController" bundle:nil];
+//        if(surveyView != nil)
+//        {
+//            [self presentViewController:surveyView animated:true completion:nil];
+//        }
+//    }
 }
 
 - (void)didReceiveMemoryWarning

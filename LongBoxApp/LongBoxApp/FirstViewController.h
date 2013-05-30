@@ -12,15 +12,18 @@
 @interface FirstViewController : UIViewController <UITextFieldDelegate>
 {
     IBOutlet UIView *firstView;
-    
-    IBOutlet UIButton *addComic;
-    
+        
     IBOutlet UIScrollView *scrollView;
     
     IBOutlet UITextField *seriesTitle;
     IBOutlet UITextField *comicTitle;
     IBOutlet UITextField *issueNum;
     IBOutlet UITextField *publisher;
+
+    IBOutlet UILabel *swipeLabel;
+    UISwipeGestureRecognizer *addSwiper;
 }
+
+-(IBAction)onSwipe:(UISwipeGestureRecognizer*)recognizer;
 
 @end

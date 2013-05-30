@@ -23,7 +23,17 @@
     }
     return self;
 }
-
+- (void)viewDidAppear:(BOOL)animated
+{
+    //allocate right swiper
+    addSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    //set direction
+    addSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
+    //add swipe left gesture to label
+    [swipeLabel addGestureRecognizer:addSwiper];
+    
+    [super viewDidAppear:animated];
+}
 - (void)viewDidLoad
 {
     //set delegate for text fields
@@ -34,10 +44,10 @@
     publisher.delegate = self;
     
     //make button rounded
-    addComic.layer.cornerRadius = 10;
-    addComic.clipsToBounds = YES;
-    addComic.layer.borderWidth = 1.5f;
-    addComic.layer.borderColor = [UIColor blackColor].CGColor;
+//    addComic.layer.cornerRadius = 10;
+//    addComic.clipsToBounds = YES;
+//    addComic.layer.borderWidth = 1.5f;
+//    addComic.layer.borderColor = [UIColor blackColor].CGColor;
     
     //Close keyboard when clicked off UITextField
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard)];
@@ -47,20 +57,19 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
--(IBAction)onClick:(id)sender
+-(IBAction)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
-    //if add button is clicked
-    if(addComic.touchInside == true)
+    //if user swipes left
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
     {
-        //change background color
-        addComic.backgroundColor = [UIColor redColor];
+        //alert users that the add comic feature will be added
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"The add comic feature will be added. This is your success message!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        if(alert != nil)
+        {
+            [alert show];
+        }
     }
-    //alert users that the add comic feature will be added
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"The add comic feature will be added. This is your success message!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-    if(alert != nil)
-    {
-        [alert show];
-    }
+    
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {

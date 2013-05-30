@@ -43,6 +43,9 @@
             [surveyWebView loadRequest:request];
         }
     }
+    /////
+    //figure out how to reload survey
+    /////
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

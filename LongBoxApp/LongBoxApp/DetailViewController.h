@@ -14,5 +14,9 @@
     IBOutlet UILabel *completeLabel;
     IBOutlet UIView *detailView;
     IBOutlet UIButton *surveyBtn;
+    
+    IBOutlet UILabel *swipeLabel;
+    UISwipeGestureRecognizer *surveySwiper;
 }
+-(IBAction)onSwipe:(UISwipeGestureRecognizer*)recognizer;
 @end
